@@ -1,0 +1,48 @@
+<!--Tarea de formulario crear un formulario de registro para un sitio web para reservar una hora al doctor debe incluir nombre del paciente,fecha de cita,fecha nacimiento,sintomas del paciente,ciudad --(lista deplegable)y casilla de verificacion-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <br>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        <br>
+        <label for="fecha_nacimiento">Fecha de cita medica</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-Cita">
+        <br>
+        <label for="Ciudad">Ciudad:</label>
+        <select id="Ciudad" name="Ciudad">
+            <option value="Santiago">Santiago</option>
+            <option value="Serena">Serena</option>
+            <option value="Temuco">temuco</option>
+        </select>
+        <br>
+        <br>
+        <label for="sintomas">sintomas:</label>
+        <textarea id="sintomas" name="sintomas" rows="4" cols="50"></textarea>
+
+          <br>
+        <br>
+        <input type="checkbox" id="suscribirse" name="suscribirse" checked>
+      
+        <label for="Acepto">Acepto terminos y condiciones</label>
+
+
+        <div>
+            <input type="submit" value="Registrarse">
+
+</body>
+
+</html>
