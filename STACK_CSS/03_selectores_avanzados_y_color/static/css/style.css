@@ -1,0 +1,86 @@
+* {
+   /*selecctor comodin (*) selecciona todosloselementos html*/
+
+   /* outline: 1px solid crimson;*/
+   /*Linea  externa de 2px*/
+   margin: 0;
+   /*Formatea espacios externos de elementos html*/
+   padding: 0;
+   /*formatea espacios internos de elementos html*/
+   box-sizing: border-box;
+   /*concidera bordes dentro de tamaño de elemento html*/
+
+}
+
+body {
+   padding: 40px;
+}
+
+h1 {
+   color: rebeccapurple;
+}
+
+.green {
+   color: rgb(70, 180, 119);
+}
+
+#lila {
+   color: rgb(151, 125, 182);
+}
+
+.quote p {
+   color: rgb(147, 200, 207);
+   font-style: italic;
+}
+
+.quote h4 {
+   color: rgb(190, 167, 226);
+   font-weight: bold;
+   /*Negrita*/
+}
+
+.header>img {
+   /*Solo afecta a los elementos hijos directos(>)*/
+   height: 50px;
+   /*height:ALTURA*/
+}
+
+#container p { /*seleccion de parrafo dentro de contenedor (#)*/
+   font-size: 16px; /*tamaño de letra*/
+   background-color: rgba(154, 187, 231, 0.692); /*color de fondo*/
+   color: rgb(255, 255, 255);/*color de letra*/
+}
+
+#container p.highlight {
+   font-weight: bold;
+   color: rgba(206, 147, 191, 0.692);
+}
+
+input[type="text"] {
+   border: 2px solid rgb(158, 176, 211);
+   padding: 3px;
+}
+form{
+   padding: 20px;
+}
+input[type="submit"] { /*seleccion de elementos a traves de su propiedad (type*/
+   color: rgb(255, 255, 255);
+   background-color: rgba(192, 145, 214, 0.692);
+   border: none; /*wuits lod bordes por defecto*/
+   padding: 5px 20px;
+   cursor:pointer;/*manito para realizar click*/
+}
+.color_nombre{
+   color:aquamarine;
+   background-color:mediumvioletred
+}
+
+.color_rgb{
+   color:rgb(94, 94, 189);
+   background-color: #f4dcfc;
+}
+
+.color_hex{
+   color:#7b679b;
+   background-color: #b9cae0;
+}
