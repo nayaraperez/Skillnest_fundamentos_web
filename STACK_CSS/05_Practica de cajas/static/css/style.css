@@ -19,24 +19,40 @@
    margin-bottom: 20px;
 }
 
-.centrado a {
+.CENTRADOUP {
+   text-align: center;
+}
+.centrado a { color: #008DD2;}
+
+.CENTRADOUP a {
    text-decoration: none;
    font-weight: bold;
    color: #0c87c5;
 }
-.container{
+
+.container {
    width: 950px;
    margin: 0 auto;
 }
+
 .caja {
    display: inline-block;
-   padding: 75px 20px;
-   color: white;
-   font-weinght:bold;
+   font-weight: bold;
    width: 300px;
    border-radius: 10px;
+   border: solid 1px #aaaaaa;
+   overflow: hidden;
+}
 
+.encabezado_caja {
+   padding: 20px;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+}
 
+.cuerpo_caja {
+   padding: 40px;
+   color: black;
 }
 
 .azul {
@@ -45,32 +61,38 @@
 }
 
 .rojo {
-   background-color: #EE433A;}
+   background-color: #EE433A;
+}
 
 .verde {
    background-color: #00C56A;
 
-   }
-   .caja1 {
+}
+.separar{
+   margin-bottom: 20px;
+}
+
+.caja1 {
    display: inline-block;
-   padding: 75px 20px;
-   color: white;
-   font-weinght:bold;
+   font-weight: bold;
    width: 300px;
    border-radius: 10px;
-
+   border: solid 1px #aaaaaa;
+   overflow: hidden;
 
 }
 
+
 .amarrillo {
-   background-color: #cfd200;
+   background-color: #ffdb0f;
 
 }
 
 .morado {
-   background-color: #a63aee;}
+   background-color: #b950ff;
+}
 
 .celeste {
    background-color: #00b8c5;
 
-   }
+}
