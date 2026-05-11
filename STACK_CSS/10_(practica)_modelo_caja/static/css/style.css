@@ -1,0 +1,54 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+/*HEADER*/
+.header {
+   background-color: #218916;
+   color: #ffffff;
+   padding-top: 30px;
+   text-align: center;
+   height: 100px;
+}
+.marco {
+   padding: 20px
+   ;
+}
+.marco_gris{
+   padding: 50px;
+   background-color: #DAD9D9;
+}
+.contenedor{
+   padding: 160px 0px;
+   margin: 20px  20px 10px 420px;
+   background-color: #E42115;
+text-align: center;
+
+}
+.box{
+   width: 200px;
+   display: inline-block;
+   height: 200px;
+   background-color: #FEF306;
+   margin: 10px 20px;
+   padding: 20px;
+   
+
+}
+.contenedor210{
+height: 100px; 
+margin: 20px;
+background-color: #8F2487;
+}
+.bonton{
+   border-radius: 100px;
+   height: 50px;
+  margin: 20px;
+  width: 100px;
+  
+}
+
+
