@@ -1,0 +1,60 @@
+.container {
+   display: flex; /* Activa flexbox en este contenedor */
+   justify-content: center;/*ALINEA HORIZONTALMENTE*/
+   background-color: #f0f0f0;
+   padding: 20px;
+   flex-wrap: wrap; /*baja elementos que no caben en pantalla*/
+}
+
+.item {
+   background-color: #00ade5;
+   color: #fff;
+   margin: 20px;
+   padding: 20px;
+}
+.row{
+flex-direction: row;/*direccion en filas*/
+}
+.column{
+flex-direction: column/*direccion en columnas*/;
+
+}
+.start
+{
+justify-content: flex-start; /*alineaccion a la izquerda*/
+
+}
+.center{
+justify-content:center;/*alineaccion al centro*/
+
+}
+.space-between{
+justify-content:space-between;/*distrubucion perfecta*/
+
+}
+
+/*Ejemplo */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   padding: 20px;
+}
+
+.contenedor {
+   background: #ffffff;
+   padding: 20px;
+   border-radius: 10px;
+   flex-wrap: wrap;
+
+   /* Propiedades flexbox */
+   display: flex;
+   justify-content: space-between;
+}
+
+.elemento {
+   margin: 10px;
+   background-color: #00ade5;
+   color: #ffffff;
+   padding: 20px;
+   border-radius: 10px;
+}

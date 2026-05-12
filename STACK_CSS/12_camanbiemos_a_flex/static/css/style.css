@@ -1,0 +1,73 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+
+}
+
+/*HEADER*/
+.header {
+   background-color:#34495E;
+   color: white;
+   text-align: center;
+   padding: 30px  0px;
+   margin-bottom: 20px;
+   width:100%;}
+
+.contenedor_principal {
+   padding: 55px 60px;
+   box-shadow: 2px 1px 5px black;
+   border-radius: 15px;
+   padding: 30px;
+   margin: 10px 90px 0px 90px;
+   margin-top: 30px;
+   background-color: #ffffff;
+ 
+
+}
+
+.parrafo1{
+   padding-top: 15px;
+}
+
+.texto_azul {
+   background-color: #E67E22;
+   color: white;
+   padding: 50px;
+   text-align: center;
+   border-radius: 10px;
+
+}
+
+.contenedor_tarjetas {
+   text-align: center;
+   display: flex; 
+   padding: 10px;
+
+}
+
+.box {
+   width: 90%;
+   display: inline-block;
+   height: 200px;
+   background-color: #D35400;
+   color: white;
+   margin: 10px 10px;
+   border-radius: 15px;
+}
+.up{
+   background-color: antiquewhite;
+}
+.parrafo3{
+flex-direction: row;
+margin: auto 100px;
+}
+
+.titulo_caja{
+   color: white;
+   text-align: center;
+   padding: 29px  0px;
+   font-size: 27px;
+   
+}
