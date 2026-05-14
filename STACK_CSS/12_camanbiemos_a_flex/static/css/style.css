@@ -16,11 +16,11 @@
    width:100%;}
 
 .contenedor_principal {
+   margin: 0 auto;
    padding: 55px ;
+   width: 90%;
    box-shadow: 2px 1px 5px black;
    border-radius: 15px;
-   padding: 30px;
-   margin: 10px 90px 0px 90px;
    margin-top: 30px;
    background-color: #ffffff;
  
@@ -37,13 +37,16 @@
    padding: 50px;
    text-align: center;
    border-radius: 10px;
+   margin-bottom: 15px;
 
 }
 
 .contenedor_tarjetas {
+   display: flex;
    text-align: center;
-   display: flex; 
-   padding: 10px 0;
+   justify-content: space-between;
+   gap:15px; /* Espacio entre elementos hijos*/
+   flex-wrap: wrap ;
 
 }
 
@@ -52,15 +55,17 @@
    height: 200px;
    background-color: #D35400;
    color: white;
-   margin: 10px 10px;
+   padding: 10px;
    border-radius: 15px;
+   width: 32%;
 }
 .up{
    background-color: antiquewhite;
+ 
 }
 .parrafo3{
 flex-direction: row;
-margin: auto 100px;
+margin: 10px;
 font-size: 20px;
 }
 
