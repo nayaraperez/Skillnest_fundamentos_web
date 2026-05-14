@@ -17,7 +17,7 @@
 
 .contenedor_principal {
    margin: 0 auto;
-   padding: 55px ;
+   padding: 55px 40px; 
    width: 90%;
    box-shadow: 2px 1px 5px black;
    border-radius: 15px;
@@ -51,11 +51,14 @@
 }
 
 .box {
-   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    height: 200px;
    background-color: #D35400;
    color: white;
-   padding: 10px;
+   padding:10px 40px;
    border-radius: 15px;
    width: 32%;
 }
@@ -65,14 +68,13 @@
 }
 .parrafo3{
 flex-direction: row;
-margin: 10px;
-font-size: 20px;
+font-size: 18px;
+padding: 14px 10px;
 }
 
 .titulo_caja{
    color: white;
    text-align: center;
-   padding: 29px  0px;
-   font-size: 27px;
+   font-size: 29px;
    
 }
