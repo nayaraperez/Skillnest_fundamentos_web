@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nayara Pérez">
+    <title>Posiciones de elementos css</title>
+    <!--Link css-->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="barra-navegacion">
+
+            <h1>Position:static</h1>
+            <a href="#" class="enlace-nav">Haz scroll hacia abajo ⬇</a>
+
+        </nav>
+    </header>
+    <main class="contenedor-principal">
+        <section class="tarjeta">
+            <h2>position: static </h2>
+            <p class="explicacion">El bloque oscuro tiene <code>top:40px</code> en el codigo, pero al ser <b>Static</b>, ignora la orden y se queda en la fila</p>
+            
+            <div class="bloque-normal">Bloque 1</div>
+            <div class="bloque-estatico">Bloque 2 (Intento moverse)</div>
+            <div class="bloque-normal">Bloque 3</div>
+        
+        </section>
+        <section class="tarjeta">
+            <h2>position:relative</h2>
+            <p class="explicacion">el bloque naranja se movio 25px hacia abajo,pero <b>dejo hueco</b>()</p>
+            <div class="bloque-normal">Bloque 1</div>
+            <div class="molde-fantasma">
+                <div class="bloque-relativo">bloque 2 (se movio)</div>
+            </div>
+            <div class="bloque-normal">Bloque 3</div>
+        
+        </section>
+        <section class="tarjeta">
+            <h2>position:obsolute
+            </h2>
+            <p class="explicacion">el boton rojo (X) flota anclado a la esquina de su contenedor (relative), <b>sin estobar ni enpujar</b> al texto</p>
+            <div class="ventana-modal">
+            <div class="boton-cerrar">X</div>
+            <p style="color: aqua; font-size: 1rem;">soy el contenido de una ventana la "x" flota encima de mi gracias a  position absolute.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

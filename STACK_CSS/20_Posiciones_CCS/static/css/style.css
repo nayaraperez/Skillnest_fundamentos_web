@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    /*Altura exagerada para ver scroll*/
+    min-height: 150vh;
+    padding-bottom: 50px ;
+}
+/*Posicion fija (fixed)*/
+.barra-navegacion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width:100%;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    z-index:1000;/*posicion en capas mientras mas alto el numero mas encima quedara */
+    box-shadow: 0 4px 6px rgb(47, 255, 0);
+}
+.barra-navegacion h1{
+    font-size: 1.2rem;
+}
+.enlace-nav{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+.enlace-nav:hover{
+    color: rgb(26, 255, 0);
+}
+/*Contenedor Principal*/
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;/*cuando los elemenyos no caben bajan automaticamente*/
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;/*margen para que el contenido quede visible al despegarse de la parte de arriba de la pagina*/
+}
+.tarjeta{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 300px; /*(tamaño)*/
+    padding: 20px;
+    box-shadow: 0 5px 15px rgb(5, 141, 0);;
+    flex-direction: column;
+    gap: 15px;
+    transition: tranform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta:hover{
+    transform: translateY(-10px);/*se movera hacia arriba*/
+    box-shadow: 0 15PX 25px rgb(21, 206, 0);
+}
+.tarjeta h2{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);/*color del titulo de la tarjeta*/
+    border-bottom: 2px solid rgb(0, 255, 0);
+    padding-bottom: 10px;
+}
+.explicacion{
+    font-size: 20px;
+    color: rgb(255, 255, 255);/*color d ela letra dde la primera tarjeta explicacion*/
+    line-height: 1.4;/*interlineado separacion de parrafos*/
+}
+/*cajas grises*/
+.bloque-normal{
+    background-color: rgb(0, 255, 47);/*color del bloque*/
+    color: rgb(0, 0, 0);/*color de la letra de los otros dos bloques*/
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+/*ejemplo de static (el que obedece)*/
+.bloque-estatico{
+    position: static;
+    /*intentaremos moverlo  css ignorara el movimiento*/
+    top: 40px;
+    left: 40px;
+    background-color: rgb(0, 0, 0);/*color del bloque del medio*/
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 2px solid rgb(38, 255, 0);/*borde del bloque del medio*/
+}
+/*comentario ejemplo relative (el fantasma) SEGUNDA TARJETA*/
+.molde-fantasma{
+border: 2px dashed rgb(255, 0, 0);
+border-radius: 6px;
+height: 48px;
+position: relative;
+}
+.bloque-relativo{
+    position: relative;
+    /*semueve a partir del molde-fantasma*/
+    top:25px;
+    left: 30px;
+  
+    background-color: rgb(64, 0, 255);
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px; ;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgb(255, 0, 0);
+
+
+}
+/*ejemplo absolute ventana y "X"*/
+.ventana-modal{
+    position: relative;
+    background-color: blueviolet;
+    border:2px solid rgb(255, 255, 255) ;
+    border-radius: 8px;
+    padding: 30px 15px 15px 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.boton-cerrar{
+    position: absolute;
+    /*se ancla a la esquina superior derecha de la ventana modal*/
+    top: -12px;
+    right: -12px;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px red;
+    border: 2px solid white;
+}
+
+
