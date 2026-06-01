@@ -1,0 +1,179 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+/*Encabezado */
+.header {
+   background-color: #2C3E50;
+
+}
+
+.barra {
+   padding: 15px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 2px;
+   height: 100px;
+}
+
+
+
+.barra h1 {
+   color: white;
+   text-decoration: none;
+   font-size: 30px;
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+
+}
+
+.links {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.links a {
+   text-decoration: none;
+   font-size: 18px;
+   color: #ffffff;
+
+}
+
+.boton {
+   background-color: #1E6DEB;
+   color: #ffffff;
+   border: none;
+   padding: 12px 24px;
+   font-size: 1rem;
+   font-weight: 600;
+   border-radius: 6px;
+}
+/*cuerpo*/
+.contenedor_principal{
+display: flex;
+}
+/*columna izquerda*/
+
+.columa_izquerda{
+text-align: center;
+ padding: 10px ;
+}
+.tarjeta {
+   background-color: #FFFFFF(0, 0, 0);
+   border-radius: 10px;
+   width: 700px;
+   height: 400px;
+   box-shadow: 0 5px 15px rgb(98, 98, 98);
+   margin: 35px 35px;
+   
+
+}
+
+.tarjeta h1{
+   font-size: 30px;
+   color: #181717;
+}
+.lugar{
+   padding: 5px;
+   color: #7a7a7a;
+}
+.pe{
+  font-size: medium;
+  text-align: center;
+  padding: 4px 60px 0px 60px;
+color: #383737;}
+
+.icono {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+     margin-top: 50px;
+   
+}
+.incabezado_azul{ 
+   width: 700px;
+   height: 140px;
+   background-color: #3498DB;
+   border-radius: 2px;
+} 
+.tarjeta a{
+  padding: 30px;
+   color: #3498DB;
+   text-decoration: none;
+}
+
+/*columna derecha*/
+.columa_derecha{
+   flex-direction: column;
+ display: flex;
+ 
+ }
+
+.tarjeta_dos{
+    position: relative;
+   background-color: #FFFFFF(0, 0, 0);
+   border-radius: 10px;
+   width: 500px;
+   height: 200px;
+   box-shadow: 0 5px 15px rgb(98, 98, 98);
+   margin: 40px 26px;
+}
+.tarjeta_dos h1{
+font-size: 25px;
+}
+.botan_tex{
+      display: flex;
+   align-items: center;
+   gap :60px;
+   padding: 10px;
+}
+.tarjeta_dos button {
+   display: flex;
+padding: 10px 20px ;
+border-radius: 5px;
+border:2px solid #1E6DEB;
+color: #3498DB;
+
+
+}
+
+.tarjeta_dos p {
+text-align: justify;
+color: #181717;
+align-items: center;
+}
+.texto_imagen{
+  position: relative;
+   display: flex;
+   align-items: center;
+}
+.icono-dos{
+      width: 60px;
+   height: 60px;
+   border-radius: 50%;
+
+
+}
+
+
+.tarjeta_trees{
+   background-color: #FFFFFF(0, 0, 0);
+   border-radius: 10px;
+   width: 500px;
+   height: 250px;
+   box-shadow: 0 5px 15px rgb(98, 98, 98);
+   margin: 0px 26px;
+}
+
+
+
