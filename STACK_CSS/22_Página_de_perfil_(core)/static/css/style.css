@@ -72,7 +72,7 @@ body {
 }
 
 .tarjeta {
-   background-color: #FFFFFF(0, 0, 0);
+
    border-radius: 10px;
    width: 700px;
    height: 400px;
@@ -130,7 +130,7 @@ body {
 
 .tarjeta_dos {
    position: relative;
-   background-color: #FFFFFF(0, 0, 0);
+
    border-radius: 10px;
    width: 470px;
    height: 190px;
@@ -185,15 +185,14 @@ body {
 
 
 .tarjeta_trees {
-   background-color: #FFFFFF(0, 0, 0);
+
    border-radius: 10px;
 
    width: 470px;
 
    height: 270px;
    box-shadow: 0 5px 15px rgb(98, 98, 98);
-   margin: 0px 26px;
-
+   margin: 0 26px;
 }
 
 .tarjeta_trees h1 {
