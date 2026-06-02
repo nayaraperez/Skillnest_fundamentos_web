@@ -72,7 +72,6 @@ body {
 }
 
 .tarjeta {
-
    border-radius: 10px;
    width: 700px;
    height: 400px;
@@ -100,7 +99,6 @@ body {
 }
 
 .icono {
-
    width: 150px;
    height: 150px;
    border-radius: 50%;
@@ -130,7 +128,6 @@ body {
 
 .tarjeta_dos {
    position: relative;
-
    border-radius: 10px;
    width: 470px;
    height: 190px;
