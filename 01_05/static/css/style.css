@@ -6,82 +6,102 @@
 
 }
 
+body {
+   background-color: rgb(255, 255, 255);
+}
+
 /*HEADER*/
 .encabezado_you {
-   background-color:#8a8a8a;
-   color: white;
-   padding: 30px  0px;
-   width:100%;}
-   .encabezado_you h1{
-    padding: 20px;
- position: relative;
-   }
-
-.encabezado_you img{ 
-position: absolute;
-top: 50px;
-left: 1200px;
+   width: 95%;
+   margin: 0 auto;
+   position: relative;
 }
+
+.encabezado_you img {
+   width: 1280px;
+   height: 200px;
+   position: relative;
+}
+
 .contenedor_principal {
    margin: 0 auto;
    width: 700px;
    height: 800px;
    width: 95%;
-   box-shadow: 2px 1px 5px black;
+   border: 2px#494949 solid;
    background-color: #ffffff;
    padding: 40px;
 }
 
-.parrafo1{
+.parrafo1 {
    padding-top: 15px;
 }
 
 .CONTENEDOR {
-   background-color: #E67E22;
-   color: white;
+   color: rgb(43, 43, 43);
+   border: 2px#494949 solid;
    width: 600px;
    height: 200px;
    padding: 10px;
    border-radius: 10px;
-   margin-bottom: 15px;
+
 
 }
 
-.contenedor_tarjetas {
+.contenedor_unodos {
    display: flex;
    text-align: center;
    justify-content: space-between;
-   gap:15px; /* Espacio entre elementos hijos*/
-   flex-wrap: wrap ;
+   gap: 15px;
 
 }
 
+.imagen img {
+   width: 200px;
+   height: 300px;
+}
+
+
+.contenedor_tarjetas {
+   
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   gap: 15px;
+   /* Espacio entre elementos hijos*/
+   flex-wrap: wrap;
+
+}
+
+
 .box {
    flex-direction: column;
-
    height: 200px;
-   background-color: #D35400;
-   color: white;
-   gap: 20px; 
+   color: rgb(34, 34, 34);
+   border: 2px#494949 solid;
+   gap: 20px;
    width: 100px;
    height: 270px;
    width: 32%;
 }
-.box h3{
+
+.box h3 {
    padding: 10px 10px;
 }
 
-.parrafo3{
-padding: 14px 10px;
- align-items: center;
+.parrafo3 {
+   padding: 14px 10px;
+   align-items: center;
 }
-.CONTENEDOR_dos{
+
+.CONTENEDOR_dos {
    margin-top: 40px;
-   background-color: #E67E22;
+   background-color: #000000;
    color: white;
+   border: 2px#ffffff solid;
    width: 1200px;
    height: 200px;
    padding: 20px;
    border-radius: 10px;
-   margin-bottom: 15px;
+ 
 }
