@@ -174,12 +174,15 @@
 
 .foto {
    display: flex;
-   justify-content: center;
    border-radius: 2px;
    padding: 10px;
    position: relative;
-
+      justify-content: space-between;
+      gap: 10px;
 }
+
+
+
 
 .di {
    width: 700px;
@@ -191,4 +194,24 @@
 .foto img {
    position: relative;
    left: 50px;
+}
+
+.video{
+   width:560px;
+   height: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.video_foto{
+   width: 700px;
+   height: 500px;
+   border: 2px #525050 solid;
+   padding: 40px;
+}
+.video_foto h2
+{
+   padding: 10px;
+   color: #555454;
 }
