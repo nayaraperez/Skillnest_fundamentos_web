@@ -13,7 +13,6 @@
 
 .seccion_pricipal {
    margin-top: 40px;
-   width: 700x;
    height: 300px;
    display: flex;
    background-color: #ffffff2c;
@@ -136,10 +135,6 @@
 }
 
 
-
-
-
-
 .box_dos h3 {
    padding: 10px 10px;
    color: #555454;
@@ -196,7 +191,7 @@
    left: 50px;
 }
 
-.video{
+.video24{
    width:560px;
    height: 340px;
     display: flex;
