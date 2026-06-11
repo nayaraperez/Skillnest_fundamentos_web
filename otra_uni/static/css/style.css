@@ -10,7 +10,7 @@
    display: flex;
    flex-direction: column;
    padding: 50px;
-   gap:20px;
+   gap: 20px;
 
 }
 
@@ -28,7 +28,7 @@
 
 .caja_texto {
    align-self: flex-end;
-  width: 55%;
+   width: 55%;
 
 }
 
@@ -48,45 +48,49 @@
 }
 
 
-.caja_doatos_div{
+.caja_doatos_div {
    display: flex;
-   gap:20px;
+   gap: 20px;
 }
-.caja_Datos_principal{
+
+.caja_Datos_principal {
    width: 60%;
    height: 400px;
    justify-content: space-between;
-   border-radius:10px;
+   border-radius: 10px;
    background-color: black;
    display: flex;
    padding: 60px;
    position: relative;
    gap: 30px;
- 
-}
-.caja_datos{
-   align-self:center;
-  color: aliceblue;
-  font-size: 15px;
-}
-
-.caja_Datos_principal img{
-width:280px;
-height: 250px;
-display:flex;
-justify-content:center;
 
 }
-.caja_dos_dato{
+
+.caja_datos {
+   align-self: center;
+   color: aliceblue;
+   font-size: 15px;
+}
+
+.caja_Datos_principal img {
+   width: 280px;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+
+}
+
+.caja_dos_dato {
    width: 40%;
    height: 400px;
    border: 1px solid black;
-   border-radius:10px;
+   border-radius: 10px;
    background-color: rgb(255, 255, 255);
-   padding:70px
+   padding: 70px
 }
+
 .caja_dos_dato p {
-padding:10px;
+   padding: 10px;
 }
 
 
@@ -113,31 +117,30 @@ padding:10px;
 
 .caja_texto_tos {
 
-  width: 55%;
-  color:#ffffff;
+   width: 55%;
+   color: #ffffff;
    font-size: 15px;
 
 }
 
 .imagen_dos {
    display: flex;
-justify-content: center;
+   justify-content: center;
    width: 45%;
 
 }
 
 .imagen_dos img {
-   box-shadow: #ffffff  1px 1px 1px 1px;
+   box-shadow: #ffffff 1px 1px 1px 1px;
    width: 300px;
    height: 300px;
 
 }
 
-/**/
-.titulo_tar
-{
-   align-self:center;
+.titulo_tar {
+   align-self: center;
 }
+
 .contenedor_tarjetas_dos {
    padding: 15px 0;
    border-radius: 2px;
@@ -147,7 +150,6 @@ justify-content: center;
    gap: 10px;
    text-align: center;
 }
-
 
 .box_dos {
    flex-direction: column;
@@ -205,8 +207,8 @@ justify-content: center;
    border-radius: 2px;
    padding: 10px;
    position: relative;
-      justify-content: space-between;
-      gap: 10px;
+   justify-content: space-between;
+   gap: 10px;
 }
 
 
@@ -222,25 +224,25 @@ justify-content: center;
 .foto img {
    position: relative;
    left: 100px;
-   top:40px;
+   top: 40px;
 }
 
-.video24{
-   width:560px;
+.video24 {
+   width: 560px;
    height: 340px;
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
 
 
-.video_foto{
+.video_foto {
    width: 700px;
    height: 500px;
    border: 2px #525050 solid;
    padding: 40px;
 }
-.video_foto h2
-{
+
+.video_foto h2 {
    padding: 10px;
    color: #555454;
 }
