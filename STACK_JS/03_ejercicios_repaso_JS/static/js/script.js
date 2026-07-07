@@ -12,19 +12,19 @@ console.log("conexión de js exitosa...");
 // Luego mostrar:
 // Descuento aplicado
 // Total a pagar
-function sistemaDescuento() {
-    let nombre = prompt("ingrese su nombre");
-    let monto = parseInt(prompt("ingrese el monto de compra"))
-    if (monto >= 50000) {
-        alert(`El monto con descuduento es: ${monto - (monto * 0.2)}`)
-    } else if (monto >= 30000) {
-        alert(`El monto con descuduento es: ${monto - (monto * 0.1)}`)
-    } else if (monto <= 30000 && monto > 0) {
-        alert(`El monto Final es ${monto}. Sin descuento `)
-    }
-    else {
-        alert("ingrese un valor valido");
-    }
+function sistemaDescuento(){
+    let nombre=prompt("ingrese su nombre");
+    let monto= parseInt(prompt("ingrese el monto de compra"))
+    if (monto >= 50000){
+    alert(`El monto con descuduento es: ${monto -(monto * 0.2)}`)
+} else if (monto >= 30000){
+    alert(`El monto con descuduento es: ${monto -(monto * 0.1)}`)
+} else if (monto <= 30000 && monto >0){
+    alert(`El monto Final es ${monto}. Sin descuento `)
+}
+else{
+    alert("ingrese un valor valido");
+}
 }
 
 // ✅ Ejercicio 2: Acceso a evento
@@ -38,22 +38,23 @@ function sistemaDescuento() {
 // Mostrar:
 // “Acceso permitido”
 // o “Acceso denegado”
-function accesoPermitido() {
-    let edad = parseInt(prompt(""))
-    if (edad > 18) {
-        alert("acceso permitido!")
-    }
-    else if (edad < 18 && edad > 0) {
-        let permitido = prompt("¿ Viene con acompañante?: si/no ");
-        if (permitido = "si") {
-            alert("Acceso permitido")
+function accesoPermitido()
+{
+let edad = parseInt(prompt(""))
+if (edad > 18){
+alert("acceso permitido!")
+}
+else if (edad < 18 && edad > 0) {
+    let permitido = prompt("¿ Viene con acompañante?: si/no ");
+    if (permitido = "si") {
+        alert("Acceso permitido")
 
-        } else if (permitido == "no") {
-            alert("acceso denegado")
-        }
-    } else {
-        alert("ingrese valores validos")
+    }else if (permitido == "no"){
+        alert("acceso denegado")
     }
+}else {
+    alert("ingrese valores validos")
+}
 }
 
 // ✅ Ejercicio 3: Clasificación de temperatura
@@ -65,28 +66,6 @@ function accesoPermitido() {
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
-function mostrarTemperatura() {
-    let temperatura = parseInt(prompt("ingresa la temperatura actual:"))
-    if (temperatura < 10 && temperatura >= -30) {
-        mensaje = "Hace frío"
-    } else if (temperatura >= 10 && temperatura <= 24) {
-        mensaje = "Temperatura agradable";
-}else if (temperatura >= 25 && temepratura <= 50){
-    mensaje = "Hace calor";
-}else {
-    mensaje = "❌  ingresa valores validos!"
-}
-
-
-
-
-//Alerta adicional
-if (temperatura > 35 && temperatura <50) {
-    mensaje += "\n ⚠ Alerta:Temperatura Extrema";
-}
-alert(mensaje)
-}
-
 
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
@@ -100,19 +79,6 @@ alert(mensaje)
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
-function ejercicio4(){
-    let usuario = prompt("Ingrese su nombre de usuario:");
-    let contrasena = prompt("Ingrese su contraseña:");
-    if (usuario === "admin" && contrasena ==="12345"){
-            alert("Bienvenido Administrador:" + usuario);
-    } else if (usuario === "admin") {
-        alert("Contraseña Incorrecta");
-    } else{
-        alert(`Usuario "${usuario}" no encontrado`);
-    }
-}
-
-
 
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
@@ -149,10 +115,4 @@ function ejercicio4(){
 // Cambios visuales usando JavaScript
 // Resultados dentro del HTML usando innerHTML
 // Uso de íconos o emojis según el resultado
-function promedio () {
-    let nombreEstudiante = prompt ("ingresa tu nombre:")
-    let nota1= parseInt (prompt("ingresa nota:"))
-    let nota2= parseInt (prompt("ingresa nota:"))
-    let nota3= parseInt (prompt("ingresa nota:"))
-    let (promedio >=6.0 && ()) {alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio}`)}
-}
+
