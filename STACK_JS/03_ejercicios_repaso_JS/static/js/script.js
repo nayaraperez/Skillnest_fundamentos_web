@@ -1,118 +1,173 @@
 console.log("conexión de js exitosa...");
 
-// ✅ Ejercicio 1: Sistema de descuento
-// 📝 Enunciado
-// Una tienda realiza descuentos según el monto de compra:
-// Si la compra es mayor o igual a $50.000 → 20% descuento
-// Si la compra es mayor o igual a $30.000 → 10% descuento
-// Si la compra es menor a $30.000 → sin descuento
-// El programa debe solicitar:
-// Nombre del cliente
-// Monto de compra
-// Luego mostrar:
-// Descuento aplicado
-// Total a pagar
-function sistemaDescuento(){
-    let nombre=prompt("ingrese su nombre");
-    let monto= parseInt(prompt("ingrese el monto de compra"))
-    if (monto >= 50000){
-    alert(`El monto con descuduento es: ${monto -(monto * 0.2)}`)
-} else if (monto >= 30000){
-    alert(`El monto con descuduento es: ${monto -(monto * 0.1)}`)
-} else if (monto <= 30000 && monto >0){
-    alert(`El monto Final es ${monto}. Sin descuento `)
-}
-else{
-    alert("ingrese un valor valido");
-}
-}
 
-// ✅ Ejercicio 2: Acceso a evento
-// 📝 Enunciado
-// Una persona puede ingresar a un evento si:
-// Tiene 18 años o más
-// O viene acompañada por un adulto
+// # Ejercicio 1: Calculadora de Envío
+
+// ## Enunciado
+
+// Una empresa de despacho cobra el envío dependiendo del peso del paquete.
+
 // Solicitar:
-// Edad
-// Si viene acompañado (si o no)
-// Mostrar:
-// “Acceso permitido”
-// o “Acceso denegado”
-function accesoPermitido()
-{
-let edad = parseInt(prompt(""))
-if (edad > 18){
-alert("acceso permitido!")
-}
-else if (edad < 18 && edad > 0) {
-    let permitido = prompt("¿ Viene con acompañante?: si/no ");
-    if (permitido = "si") {
-        alert("Acceso permitido")
 
-    }else if (permitido == "no"){
-        alert("acceso denegado")
+// - Nombre del cliente
+// - Peso del paquete (kg)
+
+// Condiciones:
+
+// - Hasta 2 kg
+// - Más de 2 kg y hasta 5 kg
+// - Más de 5 kg y hasta 10 kg
+// - Más de 10 kg
+
+// El programa debe indicar:
+
+// - Nombre del cliente
+// - Categoría del envío
+// - Valor correspondiente al despacho
+
+function ejercicio1(){
+    let nombreCliente = prompt ("Ingresa nombre de cliente:");
+    let peso = parseInt(prompt("Ingrese peso de paquete:"));
+    let valorDespacho = 2000;
+    let mensaje = "";
+    if (peso > 0 && peso <=2){
+        totalDespacho = peso *valorDespacho;
+    }else if (peso > 2 && peso <= 5){
+        totalDespacho = peso * valorDespacho;
+    } else if (peso >5 && peso <=10){
+        totalDespacho = peso * valorDespacho;
+    } else if (peso > 10 && peso <50){
+        totalDespacho = peso * totalDespacho;
+    }else {
+        mensaje = "ingrese valores válidos!";
     }
-}else {
-    alert("ingrese valores validos")
-}
-}
+mensaje=´Nombre cliente:${}`
 
-// ✅ Ejercicio 3: Clasificación de temperatura
-// 📝 Enunciado
-// Solicitar una temperatura y clasificar:
-// Menor a 10 → “Hace frío”
-// Entre 10 y 24 → “Temperatura agradable”
-// 25 o más → “Hace calor”
-// Además:
-// Si la temperatura supera los 35 grados, mostrar una alerta adicional:
-//  “Temperatura extrema”.
+// # Ejercicio 2: Acceso a Biblioteca
 
-// ✅ Ejercicio 4: Verificación de administrador
-// 📝 Enunciado
+// ## Enunciado
+
+// Una biblioteca posee dos tipos de usuarios:
+
+// - Estudiante
+// - Profesor
+
 // Solicitar:
-// Nombre de usuario
-// Contraseña
-// Condiciones:
-// Usuario correcto: admin
-// Contraseña correcta: 12345
-// Casos:
-// Si ambos son correctos → “Bienvenido administrador”
-// Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
-// Si usuario no existe → “Usuario no encontrado”
 
-// ✅ Ejercicio 5: Sistema de aprobación
-// 📝 Enunciado
+// - Tipo de usuario
+// - Cantidad de libros solicitados
+
+// Condiciones:
+
+// Cada tipo de usuario posee un límite distinto de préstamos.
+
+// El programa debe indicar:
+
+// - Si el préstamo está permitido.
+// - Si supera el límite permitido.
+// - Mostrar un mensaje diferente según el tipo de usuario.
+
+// Utilizar operadores lógicos para realizar las validaciones.
+
+function ejercicio2()
+let Estudiante
+let Profesor
+let usuario = prompt("Ingrese tipo de usuario:");{
+if (usuario === "Estudiante" === "Profesor") }
+
+
+
+
+
+// # Ejercicio 3: Clasificación Deportiva
+
+// ## Enunciado
+
 // Solicitar:
-// Nombre del estudiante
-// Nota 1
-// Nota 2
-// Nota 3
-// Calcular promedio.
+
+// - Nombre del participante
+// - Edad
+
+// Clasificar al participante según su edad.
+
+// Debe existir al menos cuatro categorías distintas.
+
+// Finalmente mostrar:
+
+// - Nombre
+// - Edad
+// - Categoría asignada
+
+// ---
+
+// # Ejercicio 4: Sistema de Bonificación
+
+// ## Enunciado
+
+// Una empresa entrega bonos según los años trabajados.
+
+// Solicitar:
+
+// - Nombre del trabajador
+// - Años de servicio
+
+// Clasificar según distintos rangos de antigüedad.
+
+// Mostrar:
+
+// - Nombre
+// - Nivel de antigüedad
+// - Mensaje indicando si recibe o no bonificación.
+
+// ---
+
+// # Ejercicio 5: Evaluación de Velocidad
+
+// ## Enunciado
+
+// Solicitar:
+
+// - Nombre del conductor
+// - Velocidad registrada
+
 // Condiciones:
-// Promedio 6.0 o superior → “Aprobado con excelencia”
-// Promedio entre 4.0 y 5.9 → “Aprobado”
-// Menor a 4.0 → “Reprobado”
+
+// Clasificar la velocidad en distintos rangos.
+
 // Además:
-// Si alguna nota es menor a 2.0 mostrar:
-//  “Debe asistir a reforzamiento”.
 
-// 📌 Requisitos Técnicos
-// Cada ejercicio debe:
-// Tener su propia función JavaScript
-// Ser ejecutado mediante onclick
-// Usar prompt()
-// Mostrar resultados con alert()
-// Utilizar correctamente:
-// if
-// else if
-// else
-// operadores lógicos
-// operadores de comparación
+// Si supera un determinado límite, mostrar un mensaje indicando que ha excedido la velocidad permitida.
 
-// ⭐ Desafío Extra
-// Agregar:
-// Validación de campos vacíos
-// Cambios visuales usando JavaScript
-// Resultados dentro del HTML usando innerHTML
-// Uso de íconos o emojis según el resultado
+// Mostrar:
 
+// - Nombre del conductor
+// - Velocidad
+// - Clasificación obtenida
+
+// ---
+
+// # Requisitos Técnicos
+
+// Cada ejercicio debe cumplir con:
+
+// - Una función independiente.
+// - Uso de prompt().
+// - Uso de alert().
+// - Uso de variables.
+// - Uso de if.
+// - Uso de else if.
+// - Uso de else.
+// - Uso de operadores de comparación.
+// - Uso de operadores lógicos cuando corresponda.
+
+// ---
+
+// # Desafío Extra
+
+// Agregar una o más de las siguientes mejoras:
+
+// - Validación de campos vacíos.
+// - Validación de datos numéricos.
+// - Mostrar mensajes utilizando emojis.
+// - Mostrar resultados dentro del HTML utilizando `innerHTML`.
+// - Cambiar colores o estilos mediante JavaScript según el resultado obtenido.

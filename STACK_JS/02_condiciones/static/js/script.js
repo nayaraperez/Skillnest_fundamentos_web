@@ -71,20 +71,20 @@ function mostrarTemperatura() {
         mensaje = "Hace frío"
     } else if (temperatura >= 10 && temperatura <= 24) {
         mensaje = "Temperatura agradable";
-}else if (temperatura >= 25 && temepratura <= 50){
-    mensaje = "Hace calor";
-}else {
-    mensaje = "❌  ingresa valores validos!"
-}
+    } else if (temperatura >= 25 && temepratura <= 50) {
+        mensaje = "Hace calor";
+    } else {
+        mensaje = "❌  ingresa valores validos!"
+    }
 
 
 
 
-//Alerta adicional
-if (temperatura > 35 && temperatura <50) {
-    mensaje += "\n ⚠ Alerta:Temperatura Extrema";
-}
-alert(mensaje)
+    //Alerta adicional
+    if (temperatura > 35 && temperatura < 50) {
+        mensaje += "\n ⚠ Alerta:Temperatura Extrema";
+    }
+    alert(mensaje)
 }
 
 
@@ -100,14 +100,14 @@ alert(mensaje)
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
-function ejercicio4(){
+function ejercicio4() {
     let usuario = prompt("Ingrese su nombre de usuario:");
     let contrasena = prompt("Ingrese su contraseña:");
-    if (usuario === "admin" && contrasena ==="12345"){
-            alert("Bienvenido Administrador:" + usuario);
+    if (usuario === "admin" && contrasena === "12345") {
+        alert("Bienvenido Administrador:" + usuario);
     } else if (usuario === "admin") {
         alert("Contraseña Incorrecta");
-    } else{
+    } else {
         alert(`Usuario "${usuario}" no encontrado`);
     }
 }
@@ -149,10 +149,23 @@ function ejercicio4(){
 // Cambios visuales usando JavaScript
 // Resultados dentro del HTML usando innerHTML
 // Uso de íconos o emojis según el resultado
-function promedio () {
-    let nombreEstudiante = prompt ("ingresa tu nombre:")
-    let nota1= parseInt (prompt("ingresa nota:"))
-    let nota2= parseInt (prompt("ingresa nota:"))
-    let nota3= parseInt (prompt("ingresa nota:"))
-    let (promedio >=6.0 && ()) {alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio}`)}
+function promedio() {
+    let nombreEstudiante = prompt("ingresa tu nombre:")
+    let nota1 = parseInt(prompt("ingresa nota:"))
+    let nota2 = parseInt(prompt("ingresa nota:"))
+    let nota3 = parseInt(prompt("ingresa nota:"))
+    let promedio = ((nota1 + nota2 + nota3) / 3);
+    if (promedio >= 6.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0)) {
+        alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio} y debe aun reforzamiento`)
+    } else if (promedio >= 6.0 && promedio <= 7.0) {
+        alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio} y aprobo con excelencia`)
+    } else if (promedio >= 4.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 <= 2.0)) {
+        alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio} y debe aun reforzamiento`)
+    } else if (promedio == 4.0 && promedio < 6.0) {
+        alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio} y aprobo`)
+    } else if (promedio < 4.0 && promedio >= 1.0) {
+        alert(`El estudiante ${nombreEstudiante} Tiene un promedio de ${promedio} y esta reprovado`)
+    } else {
+        alert(`ingrese valores validos`)
+    }
 }
