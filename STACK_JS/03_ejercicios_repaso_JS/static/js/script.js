@@ -26,22 +26,26 @@ console.log("conexión de js exitosa...");
 // - Valor correspondiente al despacho
 
 function ejercicio1(){
-    let nombreCliente = prompt ("Ingresa nombre de cliente:");
-    let peso = parseInt(prompt("Ingrese peso de paquete:"));
+    let nombreCliente = prompt("Ingresar nombre del cliente:");
+    let peso = parseInt(prompt("Ingresar peso de paquete:"));
     let valorDespacho = 2000;
+    let totalDespacho = 0;
     let mensaje = "";
-    if (peso > 0 && peso <=2){
-        totalDespacho = peso *valorDespacho;
-    }else if (peso > 2 && peso <= 5){
+    if (peso > 0 && peso < 2) {
         totalDespacho = peso * valorDespacho;
-    } else if (peso >5 && peso <=10){
+    } else if (peso > 2 && peso <= 5) {
+        totalDespacho = peso * valorDespacho;;
+    } else if (peso > 5 && peso <= 10) {
         totalDespacho = peso * valorDespacho;
-    } else if (peso > 10 && peso <50){
-        totalDespacho = peso * totalDespacho;
-    }else {
-        mensaje = "ingrese valores válidos!";
+    } else if (peso > 10 && peso < 50) {
+        totalDespacho = peso * valorDespacho;
+    } else {
+        mensaje = "Ingresar valores validos!!";
     }
-mensaje=´Nombre cliente:${}`
+
+    mensaje = `Nombre Cliente: ${nombreCliente} \nPaquete pesa: ${peso}kg
+    \nValor despacho: $${valorDespacho * peso}`;
+}
 
 // # Ejercicio 2: Acceso a Biblioteca
 
@@ -69,13 +73,38 @@ mensaje=´Nombre cliente:${}`
 
 // Utilizar operadores lógicos para realizar las validaciones.
 
-function ejercicio2()
-let Estudiante
-let Profesor
-let usuario = prompt("Ingrese tipo de usuario:");{
-if (usuario === "Estudiante" === "Profesor") }
+function prestamoBiblioteca() {
+    // 1. Solicitar datos al usuario (Igual que en tu ejemplo)
+    let tipoUsuario = prompt("Ingrese tipo de usuario (estudiante / profesor):").toLowerCase();
+    let cantidadLibros = parseInt(prompt("Ingrese la cantidad de libros solicitados:"));
 
+    // Definimos los límites permitidos
+    let limiteEstudiante = 3;
+    let limiteProfesor = 5;
 
+    // 2. Validaciones con operadores lógicos
+    
+    // CASO 1: Es estudiante y NO supera el límite
+    if (tipoUsuario === "estudiante" && cantidadLibros <= limiteEstudiante) {
+        alert(`Préstamo permitido. ¡Disfruta tus ${cantidadLibros} libros, estimado Estudiante!`);
+    } 
+    // CASO 2: Es estudiante y SI supera el límite
+    else if (tipoUsuario === "estudiante" && cantidadLibros > limiteEstudiante) {
+        alert(`Préstamo denegado. Como Estudiante, superas el límite permitido de ${limiteEstudiante} libros.`);
+    } 
+    // CASO 3: Es profesor y NO supera el límite
+    else if (tipoUsuario === "profesor" && cantidadLibros <= limiteProfesor) {
+        alert(`Préstamo permitido. Profesor, se le han asignado sus ${cantidadLibros} libros.`);
+    } 
+    // CASO 4: Es profesor y SI supera el límite
+    else if (tipoUsuario === "profesor" && cantidadLibros > limiteProfesor) {
+        alert(`Préstamo denegado. Estimado Profesor, ha superado su límite de ${limiteProfesor} libros.`);
+    } 
+    // CASO 5: El usuario ingresó cualquier otra cosa (Validación de errores)
+    else {
+        alert("Error: Tipo de usuario no válido o cantidad incorrecta. Intente de nuevo.");
+    }
+}
 
 
 
@@ -98,7 +127,21 @@ if (usuario === "Estudiante" === "Profesor") }
 // - Edad
 // - Categoría asignada
 
-// ---
+function ejercicio3() 
+let participanteNombre = prompt("Ingrese su nombre de participante:").toLowerCase();
+let edadParticipante = parseInt(prompt("Ingrese su Edad:"));
+let CategoríaInfantil = 14;
+let CategoríaJuvenil = 19;
+let CategoríaAbsoluta = 34;
+let CategoríaMáster = 35;
+if (participanteNombre === "participanteNombre" && edadParticipante <=CategoríaInfantil)
+    alert(`Préstamo permitido. Profesor, se le han asignado sus ${cantidadLibros} libros.`);
+else if (participanteNombre === "participanteNombre" && edadParticipante <=CategoríaJuvenil){
+else if (participanteNombre === "participanteNombre" && edadParticipante <=CategoríaAbsoluta){
+else if (participanteNombre === "participanteNombre" && edadParticipante <=CategoríaMáster){
+else { edadParticipante >130
+        alert("Error: Tipo de usuario no válido o cantidad incorrecta. Intente de nuevo.");
+    }
 
 // # Ejercicio 4: Sistema de Bonificación
 
