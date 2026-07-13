@@ -158,7 +158,30 @@ function ejercicio3() {
 // - Nivel de antigüedad
 // - Mensaje indicando si recibe o no bonificación.
 function ejercicio4() {
-    let nombreTrajador = prompt 
+    let nombreTrabajador = prompt("Ingrese su nombre:");
+    let edad = parseInt(prompt("Ingrese sus años de servicio:"));
+    
+    let antiguedad = "";
+    let recibeBono = "";
+
+    if (edad >= 0 && edad <= 2) {
+        antiguedad = "Principiante";
+        recibeBono = "No recibe bonificación (Se requiere más de 2 años).";
+    } else if (edad > 2 && edad <= 5) {
+        antiguedad = "Intermedio";
+        recibeBono = "¡Sí recibe bonificación de nivel bajo!";
+    } else if (edad > 5 && edad <= 10) {
+        antiguedad = "Avanzado";
+        recibeBono = "¡Sí recibe bonificación de nivel medio!";
+    } else if (edad > 10) {
+        antiguedad = "Experto / Senior";
+        recibeBono = "¡Sí recibe bonificación máxima!";
+    } else {
+        alert("Error: Ingrese una cantidad de años válida.");
+        return; 
+    }
+
+    alert(`Nombre: ${nombreTrabajador}\nNivel de antigüedad: ${antiguedad}\nEstado: ${recibeBono}`);
 }
 
 
@@ -185,7 +208,34 @@ function ejercicio4() {
 // - Velocidad
 // - Clasificación obtenida
 
-// ---
+function ejercicio5() {
+    let nombreConductor = prompt("Ingrese el nombre del conductor:");
+    let velocidad = parseInt(prompt("Ingrese la velocidad registrada (km/h):"));
+    
+    let limitePermitido = 120; // Límite máximo de velocidad de ejemplo
+    let clasificacion = "";
+    let mensajeExceso = "";
+
+    if (velocidad >= 0 && velocidad <= 40) {
+        clasificacion = "Velocidad Baja";
+    } else if (velocidad > 40 && velocidad <= 90) {
+        clasificacion = "Velocidad Moderada";
+    } else if (velocidad > 90 && velocidad <= 120) {
+        clasificacion = "Velocidad Alta (Dentro del límite)";
+    } else if (velocidad > 120) {
+        clasificacion = "Velocidad Peligrosa / Excesiva";
+    } else {
+        alert("Error: Ingrese un registro de velocidad válido.");
+        return;
+    }
+    if (velocidad > limitePermitido) {
+        mensajeExceso = `\n¡ALERTA!: Ha excedido la velocidad máxima permitida de ${limitePermitido} km/h.`;
+    } else {
+        mensajeExceso = "\nConducción segura. Respeta las señales de tránsito.";
+    }
+
+    alert(`Nombre del conductor: ${nombreConductor}\nVelocidad: ${velocidad} km/h\nClasificación: ${clasificacion}${mensajeExceso}`);
+}
 
 // # Requisitos Técnicos
 
