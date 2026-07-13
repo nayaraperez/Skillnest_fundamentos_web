@@ -174,7 +174,7 @@ function ejercicio4() {
         antiguedad = "Avanzado";
         recibeBono = "¡Sí recibe bonificación de nivel medio!";
     } else if (edad > 10) {
-        antiguedad = "Experto / Senior";
+        antiguedad = "Experto";
         recibeBono = "¡Sí recibe bonificación máxima!";
     } else {
         alert("Error: Ingrese una cantidad de años válida.");
