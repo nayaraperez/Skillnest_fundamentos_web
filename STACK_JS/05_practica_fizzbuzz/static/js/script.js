@@ -1,4 +1,3 @@
-const { useEffect } = require("react");
 
 console.log("Prueba de conexion Js...");
 
@@ -59,17 +58,12 @@ FizzBuzz
 ...
 Esta asignación te ayudará a mejorar tu lógica y a escribir código más eficiente.*/
 
+function fizzBuzz() {
+    for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0)  {alert(`FizzBuzz`);}
+    else if (i % 3 === 0) {alert(`Fizz`);} 
+    else if (i % 5 === 0) {alert(`Buzz`);} 
+    else {alert(i);}
+    }
+}                                                                         
 
-function contarHasta10() {
-    for (let i = 1; i <= 10; i++) {
-        alert(i);
-    } if (i % 3 === 0 && i % 5 === 0) { alert(`i`); }
-    else if (i % 3 === 0) {
-        alert(`Fizz`)
-    }
-    else if (i % 5 === 0) {
-        alert(`Buzz`)
-    } else  {
-        alert (i);
-    }
-}
