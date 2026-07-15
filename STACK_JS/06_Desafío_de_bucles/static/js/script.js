@@ -19,7 +19,7 @@ console.log("Prueba de conexion Js...");
 
 function contador() {
     for (let i = 1; i <= 10; i++) {
-        alert (`interaccion ${i}`)
+        alert(`interaccion ${i}`)
     }
 }
 
@@ -33,9 +33,10 @@ function contador() {
 // Carga completa.​
 
 function barraDeCarga() {
-    for (let i = 0; i <= 100; i+=10) {
-        alert (`interaccion ${i}%`)
+    for (let i = 0; i <= 100; i += 10) {
+        alert(` Cargando... ${i}%`)
     }
+    alert(`Carga completa`)
 }
 
 
@@ -51,11 +52,13 @@ function barraDeCarga() {
 // Producto 4 - Descuento aplicado: 20%
 // Producto 5 - Descuento aplicado: 25%​​
 
-function CalcularDescuentos(){
-for (let i = 1; i <= 5; i++) {
-    let descuento = i * 5; 
-    alert(`Producto ${i} - Descuento aplicado: ${descuento}%`);
-}    }
+function CalcularDescuentos() {
+    for (let i = 1; i <= 5; i++) {
+        let valorProducto = parseInt(prompt(`Ingrese valor del producto:`))
+        alert(`Producto ${i} - Descuento aplicado: ${i * 5}%
+            \nValor final: ${valorProducto - (valorProducto * (i * 0.05))}`);
+    }
+}
 
 // 🎮 Calcular el total de puntos en un videojuego: Un jugador gana 50 puntos cada vez 
 // que completa un nivel. Escribe un programa que calcule la puntuación total después de 5
@@ -63,11 +66,12 @@ for (let i = 1; i <= 5; i++) {
 
 // Puntos acumulados: 250​​
 
-function Puntos_Videojuegos(){
-for (let i = 1; i <= 5; i++) {
-    let puntos = i * 50; 
-    alert(`nivel ${i} Puntos totales ${puntos}`);
-}    }
+function Puntos_Videojuegos() {
+    for (let i = 1; i <= 5; i++) {
+        let puntos = i * 50;
+        alert(`nivel ${i} Puntos totales ${puntos}`);
+    }
+}
 
 
 
@@ -85,12 +89,11 @@ for (let i = 1; i <= 5; i++) {
 // Tienes 1 notificación nueva.
 // No tienes notificaciones pendientes.​​
 
-function ContadorNotificaciones(){
-for (let i = 5; i > 0; i--) {
-    alert(`Tienes ${i} notificaciones`);
-}   
-let  i=0;
-      alert(`No tienes notificaciones pendientes.`);
+function ContadorNotificaciones() {
+    for (let i = 5; i > 0; i--) {
+        alert(`Tienes ${i} notificaciones`);
+    }
+    alert(`No tienes notificaciones pendientes.`);
 }
 
 
@@ -109,11 +112,11 @@ let  i=0;
 // 📦 Manipulación de variables y estructuras de datos.
 // 🧐 Preguntas y reflexión
 
-// ¿Cómo podrías optimizar el uso de bucles para mejorar la eficiencia en tareas 
+// ¿Cómo podrías optimizar el uso de bucles para mejorar la eficiencia en tareas
 // repetitivas en un proyecto real?
 // 🎉 Resultado esperado
 // Al completar este desafío, habrás reforzado tu habilidad para estructurar bucles
 //  en distintos escenarios prácticos,
-//  aplicando la lógica de programación de manera eficiente. Estos ejercicios reflejan 
-// situaciones comunes en el desarrollo de software, ayudándote a automatizar tareas 
+//  aplicando la lógica de programación de manera eficiente. Estos ejercicios reflejan
+// situaciones comunes en el desarrollo de software, ayudándote a automatizar tareas
 // repetitivas y mejorar la optimización del código.
