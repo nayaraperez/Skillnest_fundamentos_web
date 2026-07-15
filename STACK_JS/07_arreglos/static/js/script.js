@@ -65,3 +65,51 @@ let ListaTareas =["Barrer", "Cocinar", "Realizar Compras"];
 //         if(edades[i]) >= 18;
 //     }
 // }
+// 1. Crear el arreglo con las edades proporcionadas
+
+
+
+
+// ## Ejercicio 2
+
+// Crear un arreglo con cinco nombres.
+
+// Mostrar todos utilizando un ciclo `for`.
+
+// ---
+
+
+
+function Ejercicio0() {
+
+    let nombres = ["Ana", "Pedro", "María", "Carlos", "Juan"];
+    for (let i = 0; i < nombres.length; i++) {
+        alert(`${i + 1}: ${nombres[i]}`);
+    }
+}
+
+
+// ## Ejercicio 5
+
+// Crear un arreglo con diez números.
+
+// Contar:
+
+// - Cuántos son pares.
+// - Cuántos son impares.
+
+function Ejercicio00() {
+
+    let numeros = [4, 7, 12, 15, 22, 33, 40, 55, 68, 91];
+    let pares = 0;
+    let impares = 0;
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            pares++; 
+        } else {
+            impares++; 
+        }
+    }
+    let mensaje = `Cantidad de números pares: ${pares}\n- Cantidad de números impares: ${impares}`;
+    alert(mensaje);
+}
