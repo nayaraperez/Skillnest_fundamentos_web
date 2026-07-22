@@ -210,3 +210,61 @@ function BuscarElementos() {
 
     }
 }
+
+
+
+//🏆 Encontrar el menor valor y el mayor
+function buscarMayorMenor(){
+let numeros = [10,35,7,90,22,90,2];
+let mayor = numeros[0];
+let menor = numeros[0];
+for(let i=1;i<numeros.length;i++){
+    if(numeros[i] < menor){
+        menor = numeros[i];
+    }else if (numeros [i]>mayor){
+        mayor = numeros[i];
+    } else {
+        console.log (`Valor que no afecta:${numeros[i]}`)
+    }
+
+}
+alert(`De los numeros ${numeros.join(' / ')}
+el menor es: ${menor}
+el mayor es:${mayor}`);}
+
+
+//# 💡 Ejemplo Integrador
+//unir los comsoles en una alerta 
+//contar la cantidad de ventas mayores que $10.000
+function CalcularVentas(){
+let ventas = [5000,8000,12000,3000,10000,9000,4000];
+
+let total = 0;
+let mayores = [];
+let contadorVentas=0;
+let mayor = ventas[0];
+let valorEliminado = ventas.pop();
+let valor1 = parseInt(prompt("ingrese primer valor"))
+let valor2 = parseInt(prompt("ingrese segundo valor"))
+ventas.push(valor1,valor2);
+for(let i=0;i<ventas.length;i++){
+    total += ventas[i];
+    if(ventas[i] > mayor){
+        mayor = ventas[i];
+        if(ventas[i] >=10000){
+            mayores.push(ventas[i])
+            contadorVentas++;
+        }
+    }
+
+}
+
+
+
+alert(`total de ventas: ${total};
+\nel mayor es:${mayor}
+Promedio: ${total / ventas.length}
+valores sobre 10.000: ${mayores.join(' / ')}
+conteo de mayores: ${contadorVentas} ventas
+valor Eliminado:${valorEliminado}`);
+}
