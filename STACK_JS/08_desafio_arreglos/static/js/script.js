@@ -1,7 +1,8 @@
-console.log("Prueba de conexion Js...");
+            console.log("Prueba de conexion Js...");
 
 
 
+        
 
 //🎮 Filtrando videojuegos según su clasificación
 function videojuegos() {
@@ -21,7 +22,7 @@ function videojuegos() {
         }
     }
 
-    alert(`Juegos recomendados: ${recomendados}`);
+    alert("Juegos recomendados:" + recomendados.join(" - "));
 }
 
 //🎵 Contador de canciones favoritas
