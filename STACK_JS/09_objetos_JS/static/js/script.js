@@ -41,21 +41,13 @@ let auto = {
     año:2023,
 
     encender:function(){
-
-        alert(
-
-            "Encendiendo",
-
-            this.marca,
-
-            this.modelo
-
-        );
-
+        alert(`marca:${this.marca}`)
+        alert(`modelo:${this.modelo}`)
+        alert(`año:${this.año}`);
     }
 
 };
-function holauno(){
+function hola2 (){
 auto.encender();
 }
 
@@ -69,11 +61,9 @@ let casa = {
 
     mostrarInformacion:function(){
 
-        alert(
-            this.direccion,
-
-        );
-
+        alert(`direccion:${this.direccion}`)
+        alert(`habitaciones:${this.habitaciones}`)
+        alert(`baños:${this.baños}`);
     }
 
 };
