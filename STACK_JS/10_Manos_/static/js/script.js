@@ -40,7 +40,7 @@ alert(`ingredientes del segundo sandwitch;
 
 
 
-
+function hola(){
 
     
     
@@ -105,6 +105,4 @@ alert(`ingredientes del segundo sandwitch;
     quesos: ${n4.quesos.join(" - ")}
     ingredientes: ${n4.ingredientes.join(" - ")}`);
 
-
-
-
+}
