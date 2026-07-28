@@ -46,7 +46,7 @@ alert(`ingredientes del segundo sandwitch;
 
 
 
-function hola(){
+function pizza(){
 
     
     
