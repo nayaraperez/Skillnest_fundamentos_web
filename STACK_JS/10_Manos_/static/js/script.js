@@ -1,6 +1,6 @@
 console.log("Prueba de conexion Js...");
 
-
+function ejemplo (){
 function sandwichFactory(pan, proteina, queso, salsas) {
     let sandwich = {};
     sandwich.pan = pan;
@@ -19,13 +19,19 @@ let s1 = sandwichFactory(
 let s2 =sandwichFactory(
     "Masa madre","pollo","chedar",["kepchup","mayonesa"]
 );
-alert(s1);
+
+alert(`ingredientes del primer sandwitch;
+    Pan: ${s1.pan}
+    Protenina: ${s1.proteina}
+    queso: ${s1.queso}
+    salsas: ${s1.salsas.join(" - ")}`);
+
 alert(`ingredientes del segundo sandwitch;
     Pan: ${s2.pan}
     Protenina: ${s2.proteina}
     queso: ${s2.queso}
     salsas: ${s2.salsas.join(" - ")}`);
-
+}
     
 
     
@@ -58,7 +64,7 @@ function hola(){
         ["mozzarella", "Parmesano "],
         ["pepperoni", "salchicha"],
     )
-     
+    
     let n2 = pizzaOven(
     "cornicione",
     "pomodoro",
