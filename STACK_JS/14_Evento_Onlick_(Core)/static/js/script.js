@@ -29,12 +29,12 @@ let boton1 = document.getElementById("megusta1");
 
 boton1.addEventListener("click", function () {
     let cantidad = parseInt(boton1.textContent) + 1;
-    boton1.innerText = cantidad + "Me gusta";
+    boton1.innerText = cantidad + " Me gusta";
 });
 
 let boton2 = document.getElementById("megusta2");
 
 boton2.addEventListener("click", function () {
     let cantidad = parseInt(boton2.textContent) + 1;
-    boton2.innerText = cantidad + "Me gusta";
+    boton2.innerText = cantidad + " Me gusta";
 });
