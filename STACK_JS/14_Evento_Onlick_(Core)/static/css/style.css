@@ -1,289 +1,133 @@
+/* Reseteo básico */
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-family: Arial, sans-serif;
-}
-
-/* Estilos generales */
-body {
-   font-family: 'Impact', sans-serif;
-   color: #fff;
-}
-
-/* Barra de navegación */
-.navbar {
-   background-color: #c51162;
-   padding: 15px 40px;
-   /* Flexbox */
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-/* Logo */
-.logo a {
-   color: #fff;
-   text-decoration: none;
-   font-size: 24px;
-   text-transform: uppercase;
-   /* Flexbox */
-   display: flex;
-   align-items: center;
-   transform: transform 0.3s ease, margin-left 1s ease;
-}
-.logo a:hover{
-      transform: scale(1.2);
-      margin-left:10px;
-      
-}
-
-/* Icono logo */
-.logo i {
-   margin-right: 8px;
-   font-size: 28px;
-   color: #fff;
-}
-
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-   font-family: Arial, sans-serif;
-   background-color: #ECF0F1;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
 }
 
-/*Encabezado */
+/* --- BARRA DE NAVEGACIÓN --- */
 .header {
-   background-color: #2C3E50;
-
+    width: 100%;
 }
 
 .barra {
-   padding: 15px 40px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-radius: 2px;
-   height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a89aff;
+    padding: 12px 30px;
 }
-
-
 
 .barra h1 {
-   color: white;
-   text-decoration: none;
-   font-size: 30px;
-   display: flex;
-   align-items: center;
-   font-weight: bold;
-
+    color: #ffffff;
+    font-size: 22px;
 }
 
-.links {
-   display: flex;
-   gap: 20px;
-   align-items: center;
+.cajaBusqueda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
 }
 
-.links a {
-   text-decoration: none;
-   font-size: 18px;
-   color: #ffffff;
-
+.inputBusqueda {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
 }
 
-.boton {
-   background-color: #1E6DEB;
-   color: #ffffff;
-   border: none;
-   padding: 12px 24px;
-   font-size: 1rem;
-   font-weight: 600;
-   border-radius: 6px;
+.botonLogin {
+    background-color: #755eea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-/*cuerpo*/
-.contenedor_principal {
-   display: flex;
+/* --- CONTENIDO PRINCIPAL --- */
+.contenedorPrincipal {
+   flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-/*columna izquerda*/
-
-.columa_izquerda {
-   text-align: center;
-   padding: 10px;
+/* Columna Izquierda */
+.seccionPublicaciones {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+/* Columna Derecha */
+.seccionLateral {
+    flex: 1;
+}
+
+/* Estilo simple para las tarjetas */
 .tarjeta {
-   border-radius: 10px;
-   width: 700px;
-   height: 400px;
-   box-shadow: 0 2px 10px rgb(153, 153, 153);
-   margin: 35px 35px;
-
-
+    background-color: #ffffff;
+    box-shadow: #9c9b9b 0 2px 5px;
+    border-radius: 8px;
+    padding: 20px;
 }
 
-.tarjeta h1 {
-   font-size: 30px;
-   color: #181717;
+.tarjeta h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.lugar {
-   padding: 5px;
-   color: #7a7a7a;
+.metaInfo {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
 }
 
-.pe {
-   font-size: medium;
-   text-align: center;
-   padding: 4px 60px 0px 60px;
-   color: #383737;
+.textoPost {
+    font-size: 14px;
+    margin: 15px 0;
 }
 
-.icono {
-   width: 150px;
-   height: 150px;
-   border-radius: 50%;
-   margin-top: 50px;
-
+.botonMeGusta {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.incabezado_azul {
-   width: 700px;
-   height: 140px;
-   background-color: #3498DB;
-   border-radius: 2px;
+/* Tarjeta lateral de bienvenida */
+.tarjetaBienvenida {
+    text-align: center;
 }
 
-.tarjeta a {
-   padding: 30px;
-   color: #3498DB;
-   text-decoration: none;
+.textoBienvenida {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
 }
 
-/*columna derecha*/
-.columa_derecha {
-   flex-direction: column;
-   display: flex;
-
-}
-
-.tarjeta_dos {
-   position: relative;
-   border-radius: 10px;
-   width: 470px;
-   height: 190px;
-   box-shadow: 0 2px 10px rgb(153, 153, 153);
-   margin: 20px 26px;
-
-
-}
-
-.tarjeta_dos h1 {
-   font-size: 25px;
-}
-
-.botan_tex {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 10px;
-
-}
-
-.botonn {
-   display: flex;
-   padding: 8px 25px;
-   border-radius: 5px;
-   border: 2px solid #1E6DEB;
-   color: #3498DB;
-
-
-}
-
-
-.tarjeta_dos p {
-   text-align: justify;
-   color: #181717;
-   align-items: center;
-}
-
-.texto_imagen {
-   position: relative;
-   display: flex;
-   align-items: center;
-}
-
-.icono-dos {
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   margin: 0px 14px;
-
-}
-
-
-.tarjeta_trees {
-
-   border-radius: 10px;
-
-   width: 470px;
-
-   height: 270px;
-   box-shadow: 0 5px 15px rgb(98, 98, 98);
-   margin: 0 26px;
-}
-
-.tarjeta_trees h1 {
-   font-size: 25px;
-}
-
-.boton-cerrar {
-   position: absolute;
-   top: -39px;
-   right: 20px;
-   background-color: rgb(212, 73, 73);
-   color: rgb(255, 255, 255);
-}
-
-.boton-abierto {
-   position: absolute;
-   top: -39px;
-   right: 60px;
-   background-color: rgb(84, 180, 159);
-   color: rgb(255, 255, 255);
-}
-
-.boton-abiertodos {
-   position: absolute;
-   top: 8px;
-   right: 60px;
-   background-color: rgb(84, 180, 159);
-   color: rgb(255, 255, 255);
-}
-
-
-.boton-cerrardos {
-   position: absolute;
-   top: 8px;
-   right: 20px;
-   background-color: rgb(212, 73, 73);
-   color: rgb(255, 255, 255);
-
-}
-
-.boton_cero {
-   width: 27px;
-   height: 27px;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-weight: bold;
-   font-size: 14px;
+.botonPerfil {
+    background-color: #00d2b5;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
