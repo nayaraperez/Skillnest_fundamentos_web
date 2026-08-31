@@ -1,0 +1,99 @@
+/* Reseteo básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.header {
+    width: 100%;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4A3F35;
+    padding: 12px 30px;
+}
+
+.barra h1 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.cajaBusqueda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.inputBusqueda {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+}
+
+.botonLogin {
+    background-color: #D9C7B8;
+    color: #4A3F35;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+
+
+.galeria{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+
+}
+.tarjeta {
+    display: flex;
+     background-color: #ffffff;
+    box-shadow: #9c9b9b 0 2px 5px;
+    border-radius: 8px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
