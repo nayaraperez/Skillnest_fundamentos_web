@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.barra{
+    background-color: #3E3E3E;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+.Contenedor_pricipal{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}

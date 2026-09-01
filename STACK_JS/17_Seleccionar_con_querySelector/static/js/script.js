@@ -46,32 +46,39 @@ if (boton !== null) {
 
 
 
-const boton3 = document.getElementById("miBoton3");
+/*const boton3 = document.getElementById("miBoton3");
 
 
 boton3.addEventListener("click", function () {
-    console.log("El ratón está sobre el botón");
-    boton3.style.backgroundColor = "white";
-    boton3.style.color = "black";
-    boton3.innerText = "Haz cambiado el texto!";
-});
-
-boton3.addEventListener("click", function () {
-
-    boton3.style.backgroundColor = "red";
+    boton3.style.color = "white";
+    boton3.style.backgroundColor = "blue";
     boton3.innerText = "Haz cambiado el texto!";
 });
 
 
+*/
 
 
-document.getElementById("miBoton3").addEventListener("click", cambiarColor);
 
 
-// Función que cambia el color de fondo al hacer clic
-function cambiarColor() {
-    let colores = ["#ff6347", "#66cdaa", "#9370db", "#ffd700", "#4682b4", "#ffa07a"];
-    let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    const elemento= document.querySelector("body")
-    elemento.style.backgroundColor = colorAleatorio;
-}
+const boton1 = document.querySelector("#miBoton3");
+
+
+    boton1.addEventListener("click", function () {
+        if (boton1 !== null){
+    if (this.textContent === "Haz click en mi y cambiare") {
+        this.textContent === "Ves que es distinto?"
+        this.style.backgroundColor = "pink"
+        this.style.color = "gray"
+    } else {
+        this.textContent = "Haz click en mi y cambiare"
+        this.style.backgroundColor = "gray"
+        this.style.color = "white"
+    }
+} else {
+    console.log ("El boton no existe");
+}});
+
+
+
+
