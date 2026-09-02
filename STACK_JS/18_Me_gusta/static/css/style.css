@@ -6,18 +6,66 @@
 }
 
 
-.barra{
+.barra {
     background-color: #3E3E3E;
-    align-items: center;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     color: white;
     padding: 15px;
     font-size: 14px;
 }
-.Contenedor_pricipal{
+
+.Contenedor_pricipal {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.contenedor_derecho {
+    width: 70%;
+}
+
+.cajas {
+    border: 2px solid #3E3E3E;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.titulo_tarjeta {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    padding: 0 0 10px 0;
+}
+
+.titulo_Like {
+    display: flex;
+    gap: 10px;
     align-items: center;
 }
+
+
+/*contenedor izquerdo*/
+.contenedor_izquerdo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tarjeta{
+border: 2px solid #3E3E3E;
+padding: 20px;
+border-radius: 10px;
+margin-top: 48px;
+height: 276px;
+width: 240px;
+
+}
+
+
+
+
+
