@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.barra {
+    background-color: #3E3E3E;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.Contenedor_pricipal {
+    padding: 40px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    gap: 60px;
+
+}
+
+
+.azul_enlace {
+    color: #1818EE;
+}
+
+.contenedor_derecho {
+    width: 70%;
+}
+
+.cajas {
+    border: 2px solid #3E3E3E;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+}
+
+.titulo_tarjeta {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+}
+
+.titulo_Like {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/*contenedor izquerdo*/
+
+
+.tarjeta {
+    margin-top: 50px;
+    border: 2px solid #3E3E3E;
+    padding: 20px;
+    border-radius: 10px;
+    height: 275px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    border-radius: 50%;
+    width: 149px;
+    height: 149px;
+}
+
+
+button {
+    border: none;
+
+}
+
+.boton_perfil {
+    background-color: #2B9DC0;
+    color: azure;
+    padding: 6px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.botones_likes {
+    padding: 6px 19px;
+    background-color: #FFD06B;
+}

@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: #d6d6d6 1px solid;
+}
+
+
+.logo_taco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_naranja {
+    color: #fc6600;
+}
+
+
+.logo_carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrito_cero {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra_busqueda {
+    display: flex;
+
+}
+
+input {
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+.boton_naranja {
+    padding: 0px 16px;
+    border: none;
+    font-size: 15px;
+    background-color: #fc6600;
+    color: aliceblue;
+}
+
+.seccion_principal {
+    padding: 0 140px 0 140px;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+/*Menu de navegacion*/
+.menu_arriba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEE8C6;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 45px;
+}
+.menu_arriba p {
+    font-size: 15px;
+}
+.foto_comida {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.menu_arriba img {
+    height: 120px;
+    width: 120px;
+}
+
+
+/*SECCION INTERMEDIA*/
+
+
+.seccion_intermedia {
+    display: flex;
+    gap: 20px;
+        flex-wrap: wrap;
+}
+
+.section_izquerda {
+    width: 70%;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    background-color: #C5C5C5;   
+}
+
+.texto_grande h2{
+    font-size: 30px;
+}
+.texto_grande p {
+      font-size: 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.texto_grande {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.section_izquerda img {
+    width: 80%;
+    width: 550px;
+    height: 350px;
+}
+
+footer{
+    height: 70px;
+}
+
+
+.contenedor_derecha h3 {
+    display: flex;
+     text-align: center;
+     align-items: center;
+}
+.contenedor_derecha {
+    width: 30%;
+}
+
+.caja {
+    border: 2px solid #3E3E3E;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.caja p  {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+}
+
+.Mas {
+   margin: auto;
+   display: block;
+   padding: 10px 15px;
+   font-size: 20px;
+   border-radius: 50%;
+   border: none;
+   background-color: #F8A504;
+   color: white;
+}
