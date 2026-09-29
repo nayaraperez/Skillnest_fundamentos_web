@@ -135,25 +135,11 @@ main {
 
 /* Izquierda */
 .section_izquerda {
-    /* Mantenemos tu base */
-    flex: 2.3;
-    background-color: #bebebe;
-    display: flex;
-    align-items: center;
-    padding: 25px 30px;
+    width: 70%;
     gap: 20px;
-    overflow: hidden;
-    flex-wrap: wrap; 
-}
-
-.texto_grande {
-    flex: 1;
-    text-align: center;
-}
-
-.texto_grande h2 {
-    font-size: 28px;
-    color: #000000;
+    padding: 20px;
+    display: flex;
+    background-color: #C5C5C5;   
 }
 
 .texto_grande h2 .texto_negrita {
@@ -171,17 +157,17 @@ main {
 }
 
 .section_izquerda img {
-    flex: 1 1 250px; /* Permite encogerse y define un ancho mínimo flexible */
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 350px;
-    object-fit: cover; 
+    width: 80%;
+    width: 550px;
+    height: 350px;
 }
 
-/* Columna Derecha  */
-.section_derecha {
-    flex: 1;
+footer{
+    height: 70px;
+}
+
+
+.contenedor_derecha h3 {
     display: flex;
     flex-direction: column;
     gap: 12px;
