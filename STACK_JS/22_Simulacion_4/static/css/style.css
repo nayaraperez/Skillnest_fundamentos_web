@@ -30,16 +30,20 @@ section{
     align-items: center;
 }
 .carta img {
+
     height: 90px;
-    width: auto;
+
     border-radius: 2px ;
 }
-.descripcion
+.descripcion{
+    width: 100%;
+}
 span{
     color: #B0AFAF;
 }
 
 button{
+    width: 100%;
     border: none;
     background-color:#838283;
     color: #f5f5f5;
