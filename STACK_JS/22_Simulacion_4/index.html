@@ -1,34 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="NayaraPérez">
-    <title>Simulacio_4</title>
+    <title>Destinos Destacados</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-
 <body>
-<main>
-    <section>
-    <h1>Destinos destacados</h1>
-    <p>Explora lugares increíbles para tu próximo viaje.</p>
 
-    <div class="carta">
-    <img src="static/img/paisaje1.png" alt="Torres del Paine">
-    <div class="descripcion">
-    <h4>Torres del Paine <span>Chile</span></h4>
-    <p>Naturaleza y paisajes únicos en la Patagonia.</p>
-    </div>
-    <button>Ver más</button>
-   
-    </div>
-    </section>
-</main>
+    <main>
+        <section class="destinos-section">
+            <div class="section-header">
+                <div>
+                    <h2>Destinos destacados</h2>
+                    <p>Explora lugares increíbles para tu próximo viaje.</p>
+                </div>
+            </div>
+
+            <div class="destinos">
+                <!-- Tarjeta 1: Torres del Paine -->
+                <article class="destino-card">
+                    <div class="card-imagen torres">
+                       
+                         <img src="static/img/paisaje1.png" alt="Torres del Paine"> 
+                    </div>
+                    <div class="card-contenido">
+                        <h3>Torres del Paine</h3>
+                        <span class="pais">Chile</span>
+                        <p class="descripcion">Naturaleza y paisajes únicos en la Patagonia.</p>
+                        <button class="btn-ver-mas">Ver más</button>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2: Cusco -->
+                <article class="destino-card">
+                    <div class="card-imagen cusco">
+                         <img src="static/img/imagen2.png" alt="Cusco"> 
+                    </div>
+                    <div class="card-contenido">
+                        <h3>Cusco</h3>
+                        <span class="pais">Perú</span>
+                        <p class="descripcion">Cultura, historia y tradiciones.</p>
+                        <button class="btn-ver-mas">Ver más</button>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3: Cancún -->
+                <article class="destino-card">
+                    <div class="card-imagen cancun">
+                        <img src="static/img/images3.jfif" alt="Cancún"> 
+                    </div>
+                    <div class="card-contenido">
+                        <h3>Cancún</h3>
+                        <span class="pais">México</span>
+                        <p class="descripcion">Playas y descanso frente al mar.</p>
+                        <button class="btn-ver-mas">Ver más</button>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4: Madrid -->
+                <article class="destino-card">
+                    <div class="card-imagen madrid">
+                        <img src="static/img/madrid.jpg" alt="Madrid"> 
+                    </div>
+                    <div class="card-contenido">
+                        <h3>Madrid</h3>
+                        <span class="pais">España</span>
+                        <p class="descripcion">Gastronomía, museos y vida urbana.</p>
+                        <button class="btn-ver-mas">Ver más</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
 
 
-    <script src="static/js/script.js"></script>
+
 </body>
-
 </html>
